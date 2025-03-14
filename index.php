@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Store user data in session
                 $_SESSION['user'] = $user['firstname'];
                 $_SESSION['idno'] = $user['idno']; // Store idno in session
+                $_SESSION['is_admin'] = ($user['idno'] == '00'); // Check if the user is admin
                 header("Location: homepage.php");
                 exit();
             } else {
