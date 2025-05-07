@@ -10,8 +10,8 @@ include("database.php");
 if (isset($_GET['id'])) {
     $id = mysqli_real_escape_string($conn, $_GET['id']);
     
-    // Soft delete by updating status to inactive
-    $query = "UPDATE announcements SET status = 'inactive' WHERE id = '$id'";
+    // Delete the announcement
+    $query = "DELETE FROM announcements WHERE id = '$id'";
     
     if (mysqli_query($conn, $query)) {
         $_SESSION['message'] = "Announcement deleted successfully!";
@@ -20,6 +20,7 @@ if (isset($_GET['id'])) {
     }
 }
 
-header("Location: homepage.php");
+// Return to the home section
+header("Location: homepage.php#home");
 exit();
 ?> 

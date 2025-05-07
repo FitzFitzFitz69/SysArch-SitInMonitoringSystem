@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: #F7B4C9;
+            background-color: #E0B0FF;
             margin: 0;
             padding: 0;
             height: 100vh;
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .header {
             width: 100%;
             height: 80px;
-            background-color: #F7B4C9;
+            background-color: #E0B0FF;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: center;
@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .header h1 {
-            color: white;
+            color: black;
             margin: 0;
             font-size: 28px;
             white-space: nowrap;
@@ -147,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .container::-webkit-scrollbar-thumb {
-            background: #F7B4C6;
+            background: #E0B0FF;
             border-radius: 4px;
         }
 
@@ -173,7 +173,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             transform: translateX(-50%);
             width: 100px;
             height: 3px;
-            background-color: #F7B4C6;
+            background-color: #E0B0FF;
             border-radius: 2px;
         }
 
@@ -201,9 +201,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         input:focus,
         select:focus {
-            border-color: #F7B4C6;
+            border-color: #E0B0FF;
             outline: none;
-            box-shadow: 0 0 0 3px rgba(247, 180, 198, 0.2);
+            box-shadow: 0 0 0 3px rgba(224, 176, 255, 0.2);
         }
 
         input:disabled {
@@ -229,13 +229,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .btn-primary {
-            background-color: #F7B4C6;
-            color: white;
+            background-color: #E0B0FF;
+            color: black;
         }
 
         .btn-primary:hover {
-            background-color: #f59eb5;
+            background-color: #C690FF;
             transform: translateY(-1px);
+            color: white;
         }
 
         .btn-secondary {
@@ -264,6 +265,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .form-col {
             flex: 1;
+        }
+
+        .dashboard-label {
+            background-color: #E0B0FF;
+            color: black;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-left: 15px;
+            border: 2px solid #C690FF;
         }
     </style>
 </head>
